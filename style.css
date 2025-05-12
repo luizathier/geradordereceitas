@@ -1,0 +1,85 @@
+
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2em;
+      background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d19bcc31-33e4-448c-a5d4-fb8f62da91d1/dbreu5l-9f75ffa3-e535-48e5-93bd-a3c7817606ce.png/v1/fill/w_1192,h_670,q_70,strp/isabelle_green_gingham_wallpaper___animal_crossing_by_supabloopa_dbreu5l-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2QxOWJjYzMxLTMzZTQtNDQ4Yy1hNWQ0LWZiOGY2MmRhOTFkMVwvZGJyZXU1bC05Zjc1ZmZhMy1lNTM1LTQ4ZTUtOTNiZC1hM2M3ODE3NjA2Y2UucG5nIiwid2lkdGgiOiI8PTM4NDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.JKQYkkCJ7Ow08TVBLHeJhOaNcgEcTkRqjD75QFr1FHI);
+    }
+    
+    .box {
+        display: flex;
+        margin-left: 300px;
+        margin-bottom: 50px;
+    }
+    
+    .box .inner {
+        width: 300px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .box .inner:first-child {
+        background-color: lightgreen;
+        color: rgb(68, 139, 68);
+        transform-origin: right;
+        transform: perspective(100px) rotateY(-15deg);
+    }
+    
+    .box .inner:last-child {
+        background-color:  rgb(68, 139, 68);
+        color: lightgreen;
+        transform-origin: left;
+        transform: perspective(100px) rotateY(15deg);
+    }
+    
+    .box .inner span {
+        position: absolute;
+        animation: marquee 5s linear infinite;
+    }
+    
+    .box .inner:first-child span {
+        animation-delay: 2.5s;
+        left: -100%;
+    }
+    
+    @keyframes marquee {
+        from {
+            left: 100%;
+        }
+    
+        to {
+            left: -100%;
+        }
+    }
+
+    #receita {
+      margin-top: 2em;
+      padding: 1em;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    button {
+      padding: 0.7em 1.2em;
+      font-size: 1em;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
